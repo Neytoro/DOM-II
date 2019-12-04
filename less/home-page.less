@@ -1,12 +1,16 @@
+body { transition: opacity 1s; }
+
 .home {
 
   .intro {
+    height: fit-content;
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
 
     img {
       max-width: 100%;
       height: auto;
+      transition: transform 1s;
     }
 
     h2 {
@@ -20,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    #content-img-one, #content-img-two { transition: transform 2s; }
     
     .text-content {
       width: 48%;
@@ -34,6 +38,7 @@
 
     .img-content {
       width: 48%;
+      z-index: 1;
       padding-left: 1%;
 
       @media @mobile {
